@@ -68,3 +68,45 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 ### `yarn build` fails to minify
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+
+
+
+<!-- TO go live via github hosting -->
+
+initialize your project(react) using `git init`
+
+Make sure you are running a build version since you are going to host react server (3000 by default) to any live/public host.
+
+For that, `npm run build` or `yarn run build`
+
+`npm run deploy` or `yarn run deploy` for build
+
+you have to go to your git repo settings and under page, make ur site and publish it.
+
+after that initialize that git repo to your react local or in simple git clone in the local
+
+after that, in package.json, we have to do something:
+
+"homepage": "https://username.github.io/repo/"
+
+and add one major thing,
+
+npm install gh-pages --run-dev
+or
+yarn add gh-pages --run-dev
+
+followed by mannual adding some into package.json scripts section:
+
+ "predeploy": "yarn run build",
+ "deploy": "gh-pages -d build",
+
+ after that, in your git repo, go to setting and might be your repo got changed to gh-pages now but if not do it by changing it from default.
+
+ before final commit ,
+
+ npm/yarn run build/deploy.
+
+ aftert that, you can start working and making the change thus you will observe that on github host link.
+
+
+ --------------------------------------GOOD LUCK :) -------------------------------------
