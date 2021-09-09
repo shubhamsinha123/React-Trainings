@@ -71,7 +71,7 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/t
 
 
 
-<!-- TO go live via github hosting -->
+----------------------TO go live via github hosting---------------------------------------------
 
 initialize your project(react) using `git init`
 
