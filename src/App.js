@@ -1,12 +1,17 @@
-import logo from './logo.svg';
-import './App.css';
 
-function App() {
-  return (
-    <>
-      <h1>Welcome to my home page based on react</h1>
-    </>
-  );
+import axios from 'axios';
+import React, { Component } from 'react';
+import './App.css';
+import Header from './components/header';
+class App extends Component {
+  render() {
+    return (
+      <>
+        <Header />
+        <h1>New</h1>
+      </>
+    );
+  }
 }
 
 export default App;
