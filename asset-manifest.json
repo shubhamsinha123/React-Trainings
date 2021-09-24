@@ -1,23 +1,25 @@
 {
   "files": {
-    "main.css": "/React-Trainings/static/css/main.8c8b27cf.chunk.css",
-    "main.js": "/React-Trainings/static/js/main.501f5b17.chunk.js",
-    "main.js.map": "/React-Trainings/static/js/main.501f5b17.chunk.js.map",
-    "runtime-main.js": "/React-Trainings/static/js/runtime-main.84f3c06c.js",
-    "runtime-main.js.map": "/React-Trainings/static/js/runtime-main.84f3c06c.js.map",
-    "static/js/2.7ed62621.chunk.js": "/React-Trainings/static/js/2.7ed62621.chunk.js",
-    "static/js/2.7ed62621.chunk.js.map": "/React-Trainings/static/js/2.7ed62621.chunk.js.map",
-    "static/js/3.c96ac291.chunk.js": "/React-Trainings/static/js/3.c96ac291.chunk.js",
-    "static/js/3.c96ac291.chunk.js.map": "/React-Trainings/static/js/3.c96ac291.chunk.js.map",
+    "main.css": "/React-Trainings/static/css/main.e544ed72.chunk.css",
+    "main.js": "/React-Trainings/static/js/main.eaf7b3ac.chunk.js",
+    "main.js.map": "/React-Trainings/static/js/main.eaf7b3ac.chunk.js.map",
+    "runtime-main.js": "/React-Trainings/static/js/runtime-main.3396e070.js",
+    "runtime-main.js.map": "/React-Trainings/static/js/runtime-main.3396e070.js.map",
+    "static/js/2.4e912229.chunk.js": "/React-Trainings/static/js/2.4e912229.chunk.js",
+    "static/js/2.4e912229.chunk.js.map": "/React-Trainings/static/js/2.4e912229.chunk.js.map",
+    "static/js/3.e336f40d.chunk.js": "/React-Trainings/static/js/3.e336f40d.chunk.js",
+    "static/js/3.e336f40d.chunk.js.map": "/React-Trainings/static/js/3.e336f40d.chunk.js.map",
     "index.html": "/React-Trainings/index.html",
-    "static/css/main.8c8b27cf.chunk.css.map": "/React-Trainings/static/css/main.8c8b27cf.chunk.css.map",
-    "static/js/2.7ed62621.chunk.js.LICENSE.txt": "/React-Trainings/static/js/2.7ed62621.chunk.js.LICENSE.txt",
-    "static/media/logo.6ce24c58.svg": "/React-Trainings/static/media/logo.6ce24c58.svg"
+    "static/css/main.e544ed72.chunk.css.map": "/React-Trainings/static/css/main.e544ed72.chunk.css.map",
+    "static/js/2.4e912229.chunk.js.LICENSE.txt": "/React-Trainings/static/js/2.4e912229.chunk.js.LICENSE.txt",
+    "static/media/logo.55dd4053.svg": "/React-Trainings/static/media/logo.55dd4053.svg",
+    "static/media/menu.96de8baf.svg": "/React-Trainings/static/media/menu.96de8baf.svg",
+    "static/media/x.34697784.svg": "/React-Trainings/static/media/x.34697784.svg"
   },
   "entrypoints": [
-    "static/js/runtime-main.84f3c06c.js",
-    "static/js/2.7ed62621.chunk.js",
-    "static/css/main.8c8b27cf.chunk.css",
-    "static/js/main.501f5b17.chunk.js"
+    "static/js/runtime-main.3396e070.js",
+    "static/js/2.4e912229.chunk.js",
+    "static/css/main.e544ed72.chunk.css",
+    "static/js/main.eaf7b3ac.chunk.js"
   ]
 }
