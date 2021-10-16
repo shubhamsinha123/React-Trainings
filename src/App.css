@@ -123,6 +123,22 @@ a {
   .header {
     padding: 0px 10px;
   }
+  .paginationBttns,
+  .user {
+    display: block !important;
+  }
+  .pageCount {
+    display: none;
+  }
+  .user {
+    width: 85% !important;
+    height: 153px !important;
+  }
+  .paginationBttns li {
+    margin: 30px;
+    position: relative;
+    top: 75px;
+  }
   .logo {
     width: 45px;
     height: 45px;
