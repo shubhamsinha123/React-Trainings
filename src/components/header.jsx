@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { ReactComponent as CloseMenu } from '../assets/x.svg';
 import { ReactComponent as MenuIcon } from '../assets/menu.svg';
 import { ReactComponent as Logo } from '../assets/logo.svg';
+import Carousel1 from './3dcarousel';
 // import './header.css';
 
 const Header = () => {
@@ -12,13 +13,15 @@ const Header = () => {
     <div className="header">
       <div className="logo-nav">
         <div className="logo-container">
-          <a href="#">
+          <a href="/">
             <Logo className="logo" />
           </a>
         </div>
         <ul className={click ? 'nav-options active' : 'nav-options'}>
           <li className="option" onClick={closeMobileMenu}>
-            <a href="#">ABOUT</a>
+            <a href="https://shubhamsinha123.github.io/Coca-Cola/deck.html">
+              ABOUT
+            </a>
           </li>
           <li className="option" onClick={closeMobileMenu}>
             <a href="#">CONTACT</a>

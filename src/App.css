@@ -6,7 +6,11 @@
   flex-direction: column;
   width: 100%;
 }
-
+.floating-text {
+  background: cornflowerblue;
+  font-style: italic;
+  font-size: 34px;
+}
 .App-logo {
   height: 40vmin;
   pointer-events: none;
@@ -177,6 +181,22 @@ a {
 .mobile-menu {
   display: block;
 }
+/* slider */
+.fa-arrow-right::before,
+.fa-arrow-left::before {
+  color: black;
+}
+p {
+  text-align: center;
+  margin: 20px;
+}
+.slider-single-content {
+  min-height: 300px;
+}
+h1 {
+  text-align: center;
+}
+/* Slder ends */
 /* Pagination */
 .comment-head {
   margin: 5% 42% 0;

@@ -8,7 +8,7 @@ function Pagination() {
   const [users, setUsers] = useState(Api.slice(0, 50));
   const [pageNumber, setPageNumber] = useState(0);
 
-  const usersPerPage = 10;
+  const usersPerPage = 5;
   const pagesVisited = pageNumber * usersPerPage;
 
   const displayUsers = users
