@@ -5,6 +5,7 @@ import './App.css';
 import Pagination from './components/pagination';
 import Header from './components/header';
 import Carousel1 from './components/3dcarousel';
+import Demo from './components/demo';
 class App extends Component {
   render() {
     return (
@@ -18,6 +19,7 @@ class App extends Component {
         <span className="das">-----------------------------------------</span>
         <Pagination />
         <h1>Comming More.....</h1>
+        <Demo />
       </>
     );
   }

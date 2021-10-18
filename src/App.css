@@ -118,10 +118,22 @@ a {
 .mobile-menu {
   display: none;
 }
+.react-3d-carousel .slider-container .slider-content .slider-single .slider-single-content img {
+  height: 29em;
+}
+.react-3d-carousel .slider-container .slider-content .slider-single .slider-single-content {
+  box-shadow: none;
+}
+
+/* breakpoint for responsiveness */
+
 @media (max-width: 648px) {
   /*Mobile View */
   .header {
     padding: 0px 10px;
+  }
+  .react-3d-carousel .slider-container .slider-content .slider-single .slider-single-content img {
+    height: initial;
   }
   .paginationBttns,
   .user {

@@ -2,9 +2,8 @@ import React, { useState } from 'react';
 import { ReactComponent as CloseMenu } from '../assets/x.svg';
 import { ReactComponent as MenuIcon } from '../assets/menu.svg';
 import { ReactComponent as Logo } from '../assets/logo.svg';
-import Carousel1 from './3dcarousel';
+import { Link } from 'react-router-dom';
 // import './header.css';
-
 const Header = () => {
   const [click, setClick] = useState(false);
   const handleClick = () => setClick(!click);
@@ -18,21 +17,26 @@ const Header = () => {
           </a>
         </div>
         <ul className={click ? 'nav-options active' : 'nav-options'}>
-          <li className="option" onClick={closeMobileMenu}>
+          <li className="option">
             <a href="https://shubhamsinha123.github.io/Coca-Cola/deck.html">
               ABOUT
             </a>
           </li>
-          <li className="option" onClick={closeMobileMenu}>
+          {/* <Link to="/carousel"> */}
+          {/* <Link to="/demo"> */}
+          <li className="option">
             <a href="#">CONTACT</a>
+            {/* CONTACT */}
           </li>
-          <li className="option" onClick={closeMobileMenu}>
+          {/* </Link> */}
+          {/* </Link> */}
+          <li className="option">
             <a href="#">BLOG</a>
           </li>
-          <li className="option mobile-option" onClick={closeMobileMenu}>
+          <li className="option mobile-option">
             <a href="#">SIGN-IN</a>
           </li>
-          <li className="option mobile-option" onClick={closeMobileMenu}>
+          <li className="option mobile-option">
             <a href="" className="sign-up">
               SIGN-UP
             </a>
@@ -40,7 +44,7 @@ const Header = () => {
         </ul>
       </div>
       <ul className="signin-up">
-        <li className="sign-in" onClick={closeMobileMenu}>
+        <li classNam>
           <a href="#">SIGN-IN</a>
         </li>
         <li onClick={closeMobileMenu}>
