@@ -32,6 +32,7 @@ function Pagination() {
 
   return (
     <div className="App">
+      <h1 className="comment-head">Comment's-</h1>
       {displayUsers}
       <ReactPaginate
         previousLabel={'Previous'}

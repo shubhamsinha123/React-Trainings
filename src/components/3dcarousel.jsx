@@ -7,10 +7,18 @@ class Carousel1 extends Component {
   }
   render() {
     let slides = [
-      // <>
-      <img src="https://picsum.photos/800/300/?random" alt="1" />,
-      // <p>fdrh</p>
-      // </>,
+      <div className="out-data">
+        <img src="https://picsum.photos/800/300/?random" alt="1" />
+        <div className="in-data">
+          <h2>Lorem ipsum header</h2>
+          <p>
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tempore
+            tempora temporibus repellat quia accusamus dicta deserunt nesciunt
+            saepe, quas, eius iusto! Quasi exercitationem saepe, aliquam vero
+            ipsam esse omnis. In!
+          </p>
+        </div>
+      </div>,
       <img src="https://picsum.photos/800/301/?random" alt="2" />,
       <img src="https://picsum.photos/800/302/?random" alt="3" />,
       <img src="https://picsum.photos/800/303/?random" alt="4" />,

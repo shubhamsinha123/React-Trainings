@@ -6,6 +6,7 @@ import Pagination from './components/pagination';
 import Header from './components/header';
 import Carousel1 from './components/3dcarousel';
 import Demo from './components/demo';
+import SeeResult from './components/seersults';
 class App extends Component {
   render() {
     return (
@@ -15,11 +16,12 @@ class App extends Component {
         <h1 className="comment-head">3D Slider Demo</h1>
         <p>each time you refresh, you will get a new slider content</p>
         <Carousel1 />
-        <h1 className="comment-head">Comment's-</h1>
+
         <span className="das">-----------------------------------------</span>
-        <Pagination />
+        {/* <Pagination /> */}
         <h1>Comming More.....</h1>
         <Demo />
+        <SeeResult />
       </>
     );
   }
