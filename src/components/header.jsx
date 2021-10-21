@@ -4,6 +4,7 @@ import { ReactComponent as MenuIcon } from '../assets/menu.svg';
 import { ReactComponent as Logo } from '../assets/logo.svg';
 import { BrowserRouter as Router, Switch, Route, Link } from 'react-router-dom';
 import Demo from './demo';
+import Banner from './music/banner';
 import Carousel1 from './3dcarousel';
 import Pagination from './pagination';
 // import './header.css';
@@ -54,14 +55,17 @@ export default function Header() {
           </ul>
         </div>
         <ul className="signin-up">
-          <li classNam>
+          <li className="seperator">
             <a href="#">SIGN-IN</a>
           </li>
-          <li onClick={closeMobileMenu}>
+          <li className="seperator" onClick={closeMobileMenu}>
             <a href="" className="signup-btn">
               SIGN-UP
             </a>
           </li>
+          <Link to="/music-home">
+            <li className="seperator">MUSIC</li>
+          </Link>
         </ul>
         <div className="mobile-menu" onClick={handleClick}>
           {click ? (
@@ -71,16 +75,19 @@ export default function Header() {
           )}
         </div>
       </div>
-      <hr />
+
       <Switch>
         <Route path="/demo">
           <Demo />
         </Route>
-        {/* <Route path="/carousel">
+        <Route path="/carousel">
           <Carousel1 />
-        </Route> */}
+        </Route>
         <Route path="/pagination">
           <Pagination />
+        </Route>
+        <Route path="/music-home">
+          <Banner />
         </Route>
       </Switch>
     </Router>

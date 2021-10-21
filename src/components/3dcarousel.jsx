@@ -9,15 +9,6 @@ class Carousel1 extends Component {
     let slides = [
       <div className="out-data">
         <img src="https://picsum.photos/800/300/?random" alt="1" />
-        <div className="in-data">
-          <h2>Lorem ipsum header</h2>
-          <p>
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tempore
-            tempora temporibus repellat quia accusamus dicta deserunt nesciunt
-            saepe, quas, eius iusto! Quasi exercitationem saepe, aliquam vero
-            ipsam esse omnis. In!
-          </p>
-        </div>
       </div>,
       <img src="https://picsum.photos/800/301/?random" alt="2" />,
       <img src="https://picsum.photos/800/302/?random" alt="3" />,
@@ -26,6 +17,8 @@ class Carousel1 extends Component {
     ];
     return (
       <>
+        <h1 className="comment-head">3D Slider Demo</h1>
+        <p>each time you refresh, you will get a new slider content</p>
         <Carousel slides={slides} />
       </>
     );
