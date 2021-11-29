@@ -4,6 +4,7 @@ import { ReactComponent as MenuIcon } from '../assets/menu.svg';
 import { ReactComponent as Logo } from '../assets/logo.svg';
 import { BrowserRouter as Router, Switch, Route, Link } from 'react-router-dom';
 import Demo from './demo';
+import Search from './search'
 import Banner from './music/banner';
 import Carousel1 from './3dcarousel';
 import Pagination from './pagination';
@@ -43,6 +44,9 @@ export default function Header() {
             </Link>
             <Link to="/pagination">
               <li className="option">PAGINATION</li>
+            </Link>
+            <Link to="/search">
+              <li className="option">SEARCH</li>
             </Link>
             <li className="option mobile-option">
               <a href="#">SIGN-IN</a>
@@ -85,6 +89,9 @@ export default function Header() {
         </Route>
         <Route path="/pagination">
           <Pagination />
+        </Route>
+        <Route path = "/search">
+        <Search />
         </Route>
         <Route path="/music-home">
           <Banner />
