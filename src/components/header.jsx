@@ -32,7 +32,7 @@ export default function Header() {
               </a>
             </li>
             {/* <Link to="/carousel"> */}
-            <Link to="/demo" target="_blank">
+            <Link to="/demo">
               <li className="option">
                 {/* <a href="#">CONTACT</a> */}
                 DEMO
