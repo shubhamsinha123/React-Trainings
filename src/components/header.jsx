@@ -18,7 +18,7 @@ export default function Header() {
       <div className="header">
         <div className="logo-nav">
           <div className="logo-container">
-            <a href="/">
+            <a href="/React-Trainings">
               <Logo className="logo" />
             </a>
           </div>

@@ -309,3 +309,7 @@ h1 {
   /* color: grey;
   background-color: grey; */
 }
+.counter{
+  margin: 0 25%;
+  background-color: burlywood;
+}
