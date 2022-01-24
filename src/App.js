@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import logo from '../src/assets/logo.svg'
 import './App.css';
+import Cookie from 'react-cookie-consent';
 import Header from './components/header';
 class App extends Component {
   render() {
@@ -14,6 +15,9 @@ class App extends Component {
         {/* <span className="das">-----------------------------------------</span> */}
         {/* <Pagination /> */}
         <h1>Comming More.....</h1>
+        <Cookie debug = {true} className = "cookie">
+          <h1>This is my cookie....</h1>
+        </Cookie>
       </>
     );
   }
