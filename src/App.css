@@ -6,6 +6,10 @@
   flex-direction: column;
   width: 100%;
 }
+a{
+  color: #000 !important;
+  text-decoration: none !important;
+}
 .CookieConsent{
   background: linear-gradient(
     357deg, black, transparent) !important;

@@ -9,8 +9,8 @@ class App extends Component {
     return (
       <>
         <marquee direction="left" scrollamount="20" className="floating-text">This site is in development mode now</marquee>
+        <Headertwo />
         <Header />
-        {/* <Headertwo /> */}
         <header>
           {/* <img src={logo} alt="logo" /> */}
         </header>
