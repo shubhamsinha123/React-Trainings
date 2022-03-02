@@ -8,6 +8,14 @@
     background: url("https://uploads.codesandbox.io/uploads/user/e7781045-0c94-4c49-abfa-1b15f8ecea2d/PQ89-flags.png")
       no-repeat;
   }
+  .container
+  {
+    background-color: #f8f9fa;
+  }
+  .card-body
+  {
+    background: beige;
+  }
   .capital:hover{
       color: rgb(182, 101, 8);
     }
