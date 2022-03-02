@@ -18,7 +18,7 @@ class App extends Component {
         {/* <Pagination /> */}
         <h1>Comming More.....</h1>
         <Cookie debug = {true} className = "cookie">
-          <h1>This is my cookie....</h1>
+          <h1 className='cookie-msg'>I accept the <a href = "#terms">Terms and Conditions</a> here.. </h1>
         </Cookie>
       </>
     );
