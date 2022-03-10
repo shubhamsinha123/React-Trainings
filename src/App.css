@@ -6,21 +6,24 @@
   flex-direction: column;
   width: 100%;
 }
-.cookie-msg{
+.cookie-msg {
   color: #000;
 }
-.cookie-msg a
-{
+.flyout .md-form fa {
+  position: relative;
+  left: 18em;
+  top: 28px;
+}
+.cookie-msg a {
   color: #000;
   text-decoration: none;
 }
-.header a{
+.header a {
   color: #000 !important;
   text-decoration: none !important;
 }
-.CookieConsent{
-  background: linear-gradient(
-    357deg, black, transparent) !important;
+.CookieConsent {
+  background: linear-gradient(357deg, black, transparent) !important;
 }
 .floating-text {
   background: cornflowerblue;
@@ -142,10 +145,19 @@ a {
 .mobile-menu {
   display: none;
 }
-.react-3d-carousel .slider-container .slider-content .slider-single .slider-single-content img {
+.react-3d-carousel
+  .slider-container
+  .slider-content
+  .slider-single
+  .slider-single-content
+  img {
   height: 29em;
 }
-.react-3d-carousel .slider-container .slider-content .slider-single .slider-single-content {
+.react-3d-carousel
+  .slider-container
+  .slider-content
+  .slider-single
+  .slider-single-content {
   box-shadow: none;
 }
 /* CAROUSEL */
@@ -175,7 +187,12 @@ a {
   .next {
     display: none;
   }
-  .react-3d-carousel .slider-container .slider-content .slider-single .slider-single-content img {
+  .react-3d-carousel
+    .slider-container
+    .slider-content
+    .slider-single
+    .slider-single-content
+    img {
     height: initial;
   }
   .paginationBttns,
@@ -289,7 +306,7 @@ h1 {
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  width: 25%;
+  min-width: 40%;
   height: 200px;
   margin: 20px;
 }
@@ -325,7 +342,7 @@ h1 {
   /* color: grey;
   background-color: grey; */
 }
-.counter{
+.counter {
   margin: 0 25%;
   background-color: burlywood;
 }

@@ -24,8 +24,9 @@
       content: "Capital City: ";
   }
   .md-form .prefix{
-      left: 0;
-      top: 12px;
+      left: 16em;
+      position: relative;
+      top: 30px;
   }
   .flag.flag-pt {
     background-position: 0 -704px;
