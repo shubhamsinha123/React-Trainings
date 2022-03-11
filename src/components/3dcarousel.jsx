@@ -2,9 +2,7 @@ import { Component } from 'react';
 import { Carousel } from '3d-react-carousal';
 
 class Carousel1 extends Component {
-  constructor(props) {
-    super(props);
-  }
+  
   render() {
     let slides = [
       <div className="out-data">

@@ -1,6 +1,5 @@
 import Api from '../assets/pagination.json';
-import react, { useState } from 'react';
-import { Component } from 'react';
+import { useState } from 'react';
 import '../App.css';
 import ReactPaginate from 'react-paginate';
 
