@@ -81,6 +81,8 @@ For that, `npm run build` or `yarn run build`
 
 `npm run deploy` or `yarn run deploy` for build
 
+we have used `https://dashboard.emailjs.com/admin` for email based transaction. Ofcourse its free now but can be used for enterprises editions also.
+
 you have to go to your git repo settings and under page, make ur site and publish it.
 
 after that initialize that git repo to your react local or in simple git clone in the local

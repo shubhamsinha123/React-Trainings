@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { send } from 'emailjs-com'
-
+// https://dashboard.emailjs.com/admin 
+// this is the handler for the email transaction
 function MainEvent() {
   const [sender_name, set_sender_name] = useState('');
   const [image, set_image] = useState('');
