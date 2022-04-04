@@ -8,6 +8,7 @@ import Search from './search'
 import Banner from './music/banner';
 import Carousel1 from './3dcarousel';
 import Pagination from './pagination';
+import MainEvent from './Gmail/MainEvent';
 // import './header.css';
 export default function Header() {
   const [click, setClick] = useState(false);
@@ -47,6 +48,9 @@ export default function Header() {
             </Link>
             <Link to="/search">
               <li className="option">SEARCH</li>
+            </Link>
+            <Link to="/contact">
+              <li className="option">Contact Us</li>
             </Link>
             <li className="option mobile-option">
               <a href="#">SIGN-IN</a>
@@ -92,6 +96,9 @@ export default function Header() {
         </Route>
         <Route path = "/search">
         <Search />
+        </Route>
+        <Route path = "/contact">
+        <MainEvent />
         </Route>
         <Route path="/music-home">
           <Banner />

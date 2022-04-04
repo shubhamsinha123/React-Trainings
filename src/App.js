@@ -12,17 +12,17 @@ class App extends Component {
         <div className='marque'>
           <p>This site is in development mode now</p>
         </div>
-        <Headertwo />
+        {/* <Headertwo /> */}
         <Header />
-        <Country />
-        <Page />
+        {/* <Country /> */}
+        {/* <Page /> */}
         {/* <Animation /> */}
         <header>
           {/* <img src={logo} alt="logo" /> */}
         </header>
         {/* <span className="das">-----------------------------------------</span> */}
         {/* <Pagination /> */}
-        <h1>Comming More.....</h1>
+        {/* <h1>Comming More.....</h1> */}
         <Cookie debug={true} className="cookie">
           <h1 className='cookie-msg'>I accept the <a href="#terms">Terms and Conditions</a> here.. </h1>
         </Cookie>
