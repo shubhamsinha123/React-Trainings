@@ -13,7 +13,7 @@ import MainEvent from './Gmail/MainEvent';
 export default function Header() {
   const [click, setClick] = useState(false);
   const handleClick = () => setClick(!click);
-  const closeMobileMenu = () => setClick(false);
+  const closeMobileMenu = () => setClick(true);
   return (
     <Router>
       <div className="header">

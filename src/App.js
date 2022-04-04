@@ -14,6 +14,7 @@ class App extends Component {
         </div>
         {/* <Headertwo /> */}
         <Header />
+        {/* <img className='image-email' src='https://i.ibb.co/54XSvtx/DT-banner.jpg'></img> */}
         {/* <Country /> */}
         {/* <Page /> */}
         {/* <Animation /> */}

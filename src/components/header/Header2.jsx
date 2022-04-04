@@ -12,6 +12,7 @@ import {
 } from "react-bootstrap";
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Logo from "../../assets/logo.svg";
+import MainEvent from "../Gmail/MainEvent";
 class Headertwo extends React.Component {
   render() {
     return (
@@ -40,7 +41,7 @@ class Headertwo extends React.Component {
                 </NavDropdown.Item>
               </NavDropdown>
               {/* <Link to="/"> */}
-              <Nav.Link href="#service">
+              <Nav.Link href="/Main">
                 Service
               </Nav.Link>
               
