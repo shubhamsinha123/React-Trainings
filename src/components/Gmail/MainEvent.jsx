@@ -3,6 +3,7 @@ import { send } from 'emailjs-com'
 
 function MainEvent() {
   const [sender_name, set_sender_name] = useState('');
+  const [image, set_image] = useState('');
   const [sender_email, set_sender_email] = useState('');
   const [sender_message, set_sender_message] = useState('');
 
@@ -17,6 +18,14 @@ function MainEvent() {
   const handleMessage = (e) =>
   {
     set_sender_message(e.target.value)
+  }
+  const handleImage = () =>
+  {
+    return(
+      <div>
+        <img src="https://i.ibb.co/54XSvtx/DT-banner.jpg" alt="image"></img>
+      </div>
+    );
   }
   const sendMail = (e) =>
   {
@@ -43,6 +52,7 @@ function MainEvent() {
       placeholder="your name"></input><br />
       <input type="email" name="sender_email" className="form-control" value={sender_email} onChange = {handleEmail} required
       placeholder="your email"></input><br />
+      <p style = {{ display: "none"}} value = {image} onChange = {handleImage}></p>
       <input type="text" name="sender_message" value={sender_message} className="form-control" onChange = {handleMessage} required
       placeholder="your message"></input><br />
       {/* <input type="submit" name="submit" value={submit}></input> */}
