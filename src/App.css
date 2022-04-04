@@ -255,6 +255,8 @@ a {
     z-index: 1;
     align-content: center;
     padding-left: 0px;
+    margin-top: 40px;
+    /* mobile based css added margin */
   }
 
   .menu-icon {
