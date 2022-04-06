@@ -9,7 +9,7 @@ import Banner from './music/banner';
 import Carousel1 from './3dcarousel';
 import Pagination from './pagination';
 import MainEvent from './Gmail/MainEvent';
-import App from './otp-component/App';
+import Login from './otp-component/Login'
 // import './header.css';
 export default function Header() {
   const [click, setClick] = useState(false);
@@ -53,14 +53,6 @@ export default function Header() {
             <Link to="/contact">
               <li className="option">Contact Us</li>
             </Link>
-            <li className="option mobile-option">
-              <a href="#">SIGN-IN</a>
-            </li>
-            <li className="option mobile-option">
-              <a href="" className="sign-up">
-                SIGN-UP
-              </a>
-            </li>
           </ul>
         </div>
         <ul className="signin-up">
@@ -104,7 +96,7 @@ export default function Header() {
           <Banner />
         </Route>
         <Route path="/signup">
-          {/* <App /> */}
+          <Login />
         </Route>
       </Switch>
     </Router>

@@ -7,6 +7,7 @@ import Header from './components/header';
 import Country from './components/Countries/countries';
 import Apps from './components/otp-component/App';
 import SignIn from './components/otp-component/Login';
+import CookieConsent from 'react-cookie-consent';
 class App extends Component {
   render() {
     return (
@@ -17,7 +18,7 @@ class App extends Component {
         {/* <Headertwo /> */}
         <Header />
         <Apps />
-        <SignIn />
+        {/* <SignIn /> */}
         {/* <img className='image-email' src='https://i.ibb.co/54XSvtx/DT-banner.jpg'></img> */}
         {/* <Country /> */}
         {/* <Page /> */}
@@ -28,9 +29,23 @@ class App extends Component {
         {/* <span className="das">-----------------------------------------</span> */}
         {/* <Pagination /> */}
         {/* <h1>Comming More.....</h1> */}
-        <Cookie debug={true} className="cookie">
-          <h1 className='cookie-msg'>I accept the <a href="#terms">Terms and Conditions</a> here.. </h1>
+        <Cookie
+          debug={true}
+          expires={30}
+          className="cookie">
+          <h3 style={{ textAlign: "center"}} className='cookie-msg'>I accept the <a href="#terms">Terms and Conditions</a> here.. </h3>
         </Cookie>
+        {/* <CookieConsent
+          location="bottom"
+          buttonText="Sure man!!"
+          cookieName="myAwesomeCookieName2"
+          style={{ background: "#2B373B" }}
+          buttonStyle={{ color: "#4e503b", fontSize: "13px" }}
+          expires={20}
+        >
+          This website uses cookies to enhance the user experience.{" "}
+          {/* <span style={{ fontSize: "10px" }}>This bit of text is smaller :O</span> */}
+        {/* </CookieConsent> */}
       </>
     );
   }
