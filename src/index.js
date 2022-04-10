@@ -2,12 +2,20 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
+import reducers from './music-component/reducers/reducer';
 import reportWebVitals from './reportWebVitals';
+import { Provider } from 'react-redux';
+import { createStore } from 'redux';
+// import {createStore} from 'react-redux';
+const store = createStore(
+  reducers,
+  window.__REDUX_DEVTOOLS_EXTENSION__ && window.__REDUX_DEVTOOLS_EXTENSION__()
+);
 
 ReactDOM.render(
-  <React.StrictMode>
+  <Provider store={store}>
     <App />
-  </React.StrictMode>,
+  </Provider>,
   document.getElementById('root')
 );
 

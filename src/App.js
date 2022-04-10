@@ -5,8 +5,6 @@ import Headertwo from './components/header/Header2';
 import Cookie from 'react-cookie-consent';
 import Header from './components/header';
 import Country from './components/Countries/countries';
-import Apps from './components/otp-component/App';
-import SignIn from './components/otp-component/Login';
 import CookieConsent from 'react-cookie-consent';
 class App extends Component {
   render() {
@@ -17,7 +15,6 @@ class App extends Component {
         </div>
         {/* <Headertwo /> */}
         <Header />
-        <Apps />
         {/* <SignIn /> */}
         {/* <img className='image-email' src='https://i.ibb.co/54XSvtx/DT-banner.jpg'></img> */}
         {/* <Country /> */}
