@@ -32,6 +32,7 @@
     "react-scripts": "4.0.3",
     "react-spring-3d-carousel": "^1.2.1",
     "redux": "^4.1.2",
+    "sass": "^1.50.0",
     "uuid": "^8.3.2",
     "web-vitals": "^1.0.1"
   },

@@ -283,7 +283,7 @@ a {
   }
 
   .signin-up {
-    display: none;
+    display:contents;
   }
 }
 @media (min-width: 450px) and (max-width: 820px) {

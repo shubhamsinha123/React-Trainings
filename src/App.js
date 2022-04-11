@@ -10,9 +10,9 @@ class App extends Component {
   render() {
     return (
       <>
-        <div className='marque'>
+        {/* <div className='marque'>
           <p>This site is in development mode now</p>
-        </div>
+        </div> */}
         {/* <Headertwo /> */}
         <Header />
         {/* <SignIn /> */}
