@@ -21,7 +21,7 @@ class Banner extends React.Component {
           <div className="main-row-text">
             <h1>Music for everyone</h1>
             <p>Without music, life would be a mistake</p>
-            <Link to={'/home'} className="btn">
+            <Link to={'/music-home'} className="btn">
               Start Listening
             </Link>
           </div>

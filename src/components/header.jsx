@@ -5,7 +5,9 @@ import { ReactComponent as Logo } from '../assets/logo.svg';
 import { BrowserRouter as Router, Switch, Route, Link } from 'react-router-dom';
 import Demo from './demo';
 import Search from './search'
-import Banner from './music/banner';
+// import Banner from './music/banner';
+import AppMusic from '../music-component/app/AppMusic'; 
+// import Banner from '../music-component/inside-component/pages/Login'
 import Carousel1 from './3dcarousel';
 import Pagination from './pagination';
 import MainEvent from './Gmail/MainEvent';
@@ -93,7 +95,8 @@ export default function Header() {
         <MainEvent />
         </Route>
         <Route path="/music-home">
-          <Banner />
+          {/* <Banner /> */}
+          <AppMusic />
         </Route>
         <Route path="/otp">
           {/* <Home /> */}
