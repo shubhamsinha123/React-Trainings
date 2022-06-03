@@ -7,9 +7,9 @@ let musicDB = [
         lang: "ENGLISH",
         timesPlayed: 0,
         type: "electronic",
-        musicName: "Main Royaan - Yasser Desai.mp3",
+        musicName: "Balle Ni Balle.mp3",
         attribution: {
-            song: "Clarx - Shakedown [NCS Release]",
+            song: "Balle Ni Balle",
             musicBy: "NoCopyrightSounds",
             download: "https://gaana.com/song/balle-ni-balle-8",
             stream: "https://www.youtube.com/watch?v=ALZHF5UqnU4"
