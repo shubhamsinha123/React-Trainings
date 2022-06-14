@@ -6,8 +6,24 @@ import Cookie from 'react-cookie-consent';
 import Header from './components/header';
 import Country from './components/Countries/countries';
 import CookieConsent from 'react-cookie-consent';
+import "react-image-gallery/styles/css/image-gallery.css";
+import ReactImageGallery from 'react-image-gallery';
 class App extends Component {
   render() {
+    const images = [
+      {
+        original: 'https://picsum.photos/300',
+        thumbnail: 'https://picsum.photos/300',
+      },
+      {
+        original: 'https://picsum.photos/300/304/?random',
+        thumbnail: 'https://picsum.photos/300/304/?random'
+      },
+      {
+        original: 'https://picsum.photos/300/305/?random',
+        thumbnail: 'https://picsum.photos/300/306/?random'
+      }
+    ]
     return (
       <>
         {/* <div className='marque'>
@@ -15,6 +31,7 @@ class App extends Component {
         </div> */}
         {/* <Headertwo /> */}
         <Header />
+        <ReactImageGallery items={images} />
         {/* <SignIn /> */}
         {/* <img className='image-email' src='https://i.ibb.co/54XSvtx/DT-banner.jpg'></img> */}
         {/* <Country /> */}
@@ -30,7 +47,7 @@ class App extends Component {
           debug={true}
           expires={30}
           className="cookie">
-          <h3 style={{ textAlign: "center"}} className='cookie-msg'>I accept the <a href="#terms">Terms and Conditions</a> here.. </h3>
+          <h3 style={{ textAlign: "center" }} className='cookie-msg'>I accept the <a href="#terms">Terms and Conditions</a> here.. </h3>
         </Cookie>
         {/* <CookieConsent
           location="bottom"
