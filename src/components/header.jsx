@@ -54,6 +54,9 @@ export default function Header() {
             <Link to="/contact">
               <li className="option">Contact Us</li>
             </Link>
+            <li className="option">
+            <a href="https://shubhamsinha123.github.io/Coca-Cola/clock.html"  target="_blank">Clock</a>
+          </li>
           </ul>
         </div>
         <ul className="signin-up">
