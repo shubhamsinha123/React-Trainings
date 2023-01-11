@@ -1,13 +1,13 @@
 import React, { Component } from 'react';
 import './App.css';
-import Page from './components/Gallary-page/gallarypage';
+// import Page from './components/Gallary-page/gallarypage';
 import Headertwo from './components/header/Header2';
 import Cookie from 'react-cookie-consent';
 import Header from './components/header';
 import Country from './components/Countries/countries';
-import CookieConsent from 'react-cookie-consent';
+// import CookieConsent from 'react-cookie-consent';
 import "react-image-gallery/styles/css/image-gallery.css";
-import ReactImageGallery from 'react-image-gallery';
+// import ReactImageGallery from 'react-image-gallery';
 class App extends Component {
   render() {
     const images = [
@@ -31,7 +31,7 @@ class App extends Component {
         </div> */}
         {/* <Headertwo /> */}
         <Header />
-        <ReactImageGallery items={images} />
+        {/* <ReactImageGallery items={images} /> */}
         {/* <SignIn /> */}
         {/* <img className='image-email' src='https://i.ibb.co/54XSvtx/DT-banner.jpg'></img> */}
         {/* <Country /> */}
