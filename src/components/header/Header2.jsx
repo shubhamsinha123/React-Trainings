@@ -12,7 +12,6 @@ import {
 } from "react-bootstrap";
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Logo from "../../assets/logo.svg";
-import MainEvent from "../Gmail/MainEvent";
 class Headertwo extends React.Component {
   render() {
     return (

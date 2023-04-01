@@ -9,7 +9,7 @@ import Search from './search'
 import Login from '../music-component/components/Pages/Home';
 import Carousel1 from './3dcarousel';
 import Pagination from './pagination';
-import MainEvent from './Gmail/MainEvent';
+import SignInSide from './Gmail/MaterialUIForm';
 // import Home from './otp-component/Home';
 // import './header.css';
 export default function Header() {
@@ -51,19 +51,19 @@ export default function Header() {
             <Link to="/search">
               <li className="option">SEARCH</li>
             </Link>
-            <Link to="/contact">
-              <li className="option">Contact Us</li>
-            </Link>
             <li className="option">
-            <a href="https://shubhamsinha123.github.io/Coca-Cola/clock.html"  target="_blank">Clock</a>
-          </li>
+              <a href="https://shubhamsinha123.github.io/Coca-Cola/clock.html" target="_blank">Clock</a>
+            </li>
+            <Link to="/form-new">
+              <li className="option">New Form</li>
+            </Link>
           </ul>
         </div>
         <ul className="signin-up">
           <li className="seperator">
             <a href="#">SIGN-IN</a>
           </li>
-          
+
           <Link to="/otp">
             <li className="seperator">SIGNUP</li>
           </Link>
@@ -84,17 +84,17 @@ export default function Header() {
         <Route path="/demo">
           <Demo />
         </Route>
+        <Route path="/form-new">
+          <SignInSide/>
+        </Route>
         <Route path="/carousel">
           <Carousel1 />
         </Route>
         <Route path="/pagination">
           <Pagination />
         </Route>
-        <Route path = "/search">
-        <Search />
-        </Route>
-        <Route path = "/contact">
-        <MainEvent />
+        <Route path="/search">
+          <Search />
         </Route>
         <Route path="/music-home">
           <Login />
