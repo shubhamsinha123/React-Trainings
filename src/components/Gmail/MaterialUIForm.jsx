@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import Avatar from '@mui/material/Avatar';
 import Button from '@mui/material/Button';
 import { send } from 'emailjs-com';
@@ -6,9 +6,9 @@ import CssBaseline from '@mui/material/CssBaseline';
 import TextField from '@mui/material/TextField';
 import FormControlLabel from '@mui/material/FormControlLabel';
 import Checkbox from '@mui/material/Checkbox';
-import {Link as MLink} from '@mui/material';
+import { Link as MLink } from '@mui/material';
 // import {Link as MLink} from '@mui/material/Link';
-import {Link as RouterLink} from 'react-router-dom';
+import { Link as RouterLink } from 'react-router-dom';
 import Paper from '@mui/material/Paper';
 import Box from '@mui/material/Box';
 import Grid from '@mui/material/Grid';
@@ -30,20 +30,20 @@ function Copyright(props) {
 const theme = createTheme();
 
 export default function SignInSide() {
+    const [status, setStatus] = useState({ message: '', severity: '' });
     const [sender_name, set_sender_name] = useState('');
     const [sender_email, set_sender_email] = useState('');
     const [sender_message, set_sender_message] = useState('');
 
-    const alertDialog = () => {
-        return (
-            <>
-            <Alert severity="success">
-                <AlertTitle>Success</AlertTitle>
-                This is a success alert — <strong>check it out!</strong>
-            </Alert>
-            </>
-        )
-    }
+    useEffect(() => {
+        if (status.message) {
+          const timer = setTimeout(() => {
+            setStatus({ message: '', severity: '' });
+          }, 5000);
+          return () => clearTimeout(timer);
+        }
+      }, [status]);
+
     const handleName = (e) => {
         set_sender_name(e.target.value)
     }
@@ -65,11 +65,12 @@ export default function SignInSide() {
             'htNbILA46JBpjwWnB'
         )
             .then((response) => {
-                alert('message sent successfully', response.status, response.text)
-                
+                // alert('message sent successfully', response.status, response.text)
+                setStatus({ message: 'Message sent successfully', severity: 'success' });
             })
             .catch((err) => {
-                console.log("Failed", err)
+                // console.log("Failed", err)
+                setStatus({ message: 'Failed to send message', severity: 'error' });
             })
     }
 
@@ -108,6 +109,11 @@ export default function SignInSide() {
                             Get in touch with us...
                         </Typography>
                         <Box component="form" onSubmit={sendMail} sx={{ mt: 1 }}>
+                            {status.message && (
+                                <Alert onClose={() => setStatus({ message: '', severity: '' })} severity={status.severity}>
+                                    {status.message}
+                                </Alert>
+                            )}
                             <TextField
                                 margin="normal"
                                 required
